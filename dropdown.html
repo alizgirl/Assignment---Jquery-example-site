@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Let's learn Jquery</title>
+
+        <script src ="javascript.js"></script>
+        <link href="stylesheet.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="heading">Let's Learn Jquery<br>- Drop down menu -</div>
+
+        <!--nav bar-->
+        <div>
+                <li class="list"><a class="navbar" href="carousel.html" target="_blank">Carousel</a></li>
+                <li class="list"><a class="navbar" href="collapse.html" target="_blank">Collapse</a></li>
+                <li class="list"><a class="navbar" href="landingpage.html" target="_blank">Home</a></li>
+        </div>
+
+         <!-- parent container  -->
+         <div class="parent">
+            <div class="flexchild description">
+                <h1 style="font-family: Anton; color:rgb(8, 126, 142);font-size: 30px;">Description</h1>
+                <p>
+                    A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list.
+                </p>
+            </div>
+
+            <div class="flexchild description">
+                <h1 style="font-family: Anton; color:rgb(8, 126, 142);font-size: 30px;">Example</h1>
+                <div>
+                    <h2>Dropdown Example</h2>
+                    <div class="dropdown">
+                      <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Dropdown Example
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>    
+                      </ul>
+                    </div>
+                  </div>   
+            </div>
+        </div>
+
+        <div class="parent">
+            <div class="flexchild">
+                <h1 style="font-family: Anton; color:rgb(8, 126, 142);font-size: 30px;">Example Code</h1>
+                <p style="text-align: left; margin-left: 10px;">
+                    &lt!DOCTYPE html&gt <br>
+                    &lthtml&gt<br>
+                    &lthead&gt<br>
+                      &ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt <br>
+                      &ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"&gt <br>
+                      &ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"&gt&lt/script&gt<br>
+                      &ltscript src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"&gt&lt/script&gt<br>
+                    &lt/head&gt<br>
+                    &ltbody&gt<br>
+                    <br>
+                    &ltdiv class="container"&gt<br>
+                      &lth2&gtDropdown Example&lt/h2&gt<br>
+                      &ltp&gtThe data-toggle="dropdown" attribute is used to open the dropdown menu.&lt/p&gt<br>
+                      &ltdiv class="dropdown"&gt<br>
+                        &ltbutton class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown"&gtDropdown Example<br>
+                        &ltspan class="caret"&gt&lt/span&gt&lt/button&gt<br>
+                        &ltul class="dropdown-menu" role="menu" aria-labelledby="menu1"&gt<br>
+                          &ltli role="presentation"&gt&lta role="menuitem" tabindex="-1" href="#"&gtHTML&lt/a&gt&lt/li&gt<br>
+                          &ltli role="presentation"&gt&lta role="menuitem" tabindex="-1" href="#"&gtCSS&lt/a&gt&lt/li&gt<br>
+                          &ltli role="presentation"&gt&lta role="menuitem" tabindex="-1" href="#"&gtJavaScript&lt/a&gt&lt/li&gt<br>
+                          &ltli role="presentation" class="divider"&gt&lt/li&gt<br>
+                          &ltli role="presentation"&gt&lta role="menuitem" tabindex="-1" href="#"&gtAbout Us&lt/a&gt&lt/li&gt<br>    
+                        &lt/ul&gt<br>
+                      &lt/div&gt<br>
+                    &lt/div&gt<br>
+                    <br>
+                    &lt/body&gt<br>
+                    &lt/html&gt<br>
+                    <br>
+                </p>
+            </div>
+            <div class="flexchild"></div>
+        </div>
+
+    </body>
+</html>

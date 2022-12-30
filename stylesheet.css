@@ -1,0 +1,119 @@
+.heading{
+    font-family: Anton;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    background-color: rgb(8, 126, 142);
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+}
+.parent{
+    display: flex;
+    margin-left: -8px;
+    margin-right: -8px;
+    flex-wrap: wrap;
+    /*background-image: linear-gradient(to right, white, black)*/
+}
+
+.flexchild{
+    flex: 1;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.texthead{
+    font-family: 'Alumni Sans', sans-serif;
+    text-align: center;
+    margin-top: 70px;
+    color: black;
+    font-size: 120px;
+}
+
+img{
+    object-fit: contain;
+    width: 100%;
+    height: 300px;
+}
+
+.links:link{
+    color: black;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: rgb(8, 126, 142);
+}
+
+.links:hover{
+    font-size: 130px;
+    color: white;
+    text-shadow:
+        0 0 7px rgb(8, 126, 142),
+        0 0 10px rgb(8, 126, 142),
+        0 0 21px rgb(8, 126, 142),
+        0 0 42px white,
+        0 0 82px white,
+        0 0 92px white,
+        0 0 102px white,
+        0 0 151px white;
+}
+
+.list{
+    display: inline;
+    font-size: 20px;
+    padding: 15px;
+    float: right;
+    text-decoration: none;
+    
+}
+
+.navbar{
+    text-decoration: none;
+}
+
+.navbar:link{
+    color: black;
+}
+.navbar:visited{
+    color: rgb(8, 126, 142);
+}
+.navbar:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    text-shadow:
+        0 0 7px rgb(8, 126, 142),
+        0 0 10px rgb(8, 126, 142),
+        0 0 21px rgb(8, 126, 142),
+        0 0 42px white,
+        0 0 82px white,
+        0 0 92px white,
+        0 0 102px white,
+        0 0 151px white;
+}
+
+p{
+    color: black;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 10px;
+
+}
+
+.h1{
+    font-family: Anton;
+    color:rgb(8, 126, 142);
+    font-size: 30px;  
+}
+.description{
+    margin-top: 80px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }

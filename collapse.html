@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Let's learn Jquery</title>
+
+        <script src ="javascript.js"></script>
+        <link href="stylesheet.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="heading">Let's Learn Jquery<br>- Collapse -</div>
+
+        <!--nav bar-->
+        <div>
+            <li class="list"><a class="navbar" href="carousel.html" target="_blank">Carousel</a></li>
+            <li class="list"><a class="navbar" href="dropdown.html" target="_blank">Drop down menu</a></li>
+            <li class="list"><a class="navbar" href="landingpage.html" target="_blank">Home</a></li>
+        </div>
+
+         <!-- parent container  -->
+         <div class="parent">
+            <div class="flexchild description">
+                <h1 style="font-family: Anton; color:rgb(8, 126, 142);font-size: 30px;">Description</h1>
+                <p>
+                    Get base styles and flexible support for collapsible components like accordions and navigation.
+                </p>
+            </div>
+
+            <div class="flexchild description">
+                <h1 style="font-family: Anton; color:rgb(8, 126, 142);font-size: 30px;">Example</h1>
+                <div>
+                    <h2>Simple Collapsible</h2>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+                    <div id="demo" class="collapse">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                  </div>
+                    
+            </div>
+        </div>
+
+        <div class="parent">
+            <div class="flexchild">
+                <h1 style="font-family: Anton; color:rgb(8, 126, 142);font-size: 30px;">Example Code</h1>
+                <p style="text-align: left; margin-left: 10px;">
+                    &lt!DOCTYPE html&gt<br>
+                    &lthtml&gt<br>
+                    &lthead&gt<br>
+                      &ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt<br>
+                      &ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"&gt<br>
+                      &ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"&gt&lt/script&gt<br>
+                      &ltscript src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"&gt&lt/script&gt<br>
+                    &lt/head&gt<br>
+                    &ltbody&gt<br>
+                    <br>
+                    &ltdiv class="container"&gt<br>
+                      &lth2&gtSimple Collapsible&lt/h2&gt<br>
+                      &ltbutton type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"&gtSimple collapsible&lt/button&gt<br>
+                      &ltdiv id="demo" class="collapse"&gt<br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+                      &lt/div&gt<br>
+                    &lt/div&gt<br>
+                    <br>
+                    &lt/body&gt<br>
+                    &lt/html&gt<br>
+                    <br>
+                </p>
+            </div>
+            <div class="flexchild"></div>
+        </div>
+    </body>
+</html>

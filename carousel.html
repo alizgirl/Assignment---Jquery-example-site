@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Let's learn Jquery</title>
+
+        <script src ="javascript.js"></script>
+        <link href="stylesheet.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <div class="heading">Let's Learn Jquery<br>- Carousel -</div>
+        <!--nav bar-->
+        <div>
+                <li class="list"><a class="navbar" href="dropdown.html" target="_blank">Drop down menu</a></li>
+                <li class="list"><a class="navbar" href="collapse.html" target="_blank">Collapse</a></li>
+                <li class="list"><a class="navbar" href="landingpage.html" target="_blank">Home</a></li>
+        </div>
+
+        <!-- parent container  -->
+        <div class="parent">
+            <div class="flexchild description">
+                <h1 style="font-family: Anton; color:rgb(8, 126, 142);font-size: 30px;">Description</h1>
+                <p>
+                    The Carousel plugin is a component for cycling through elements, like a carousel (slideshow).
+                </p>
+            </div>
+
+            <div class="flexchild description">
+                <h1 style="font-family: Anton; color:rgb(8, 126, 142); font-size: 30px;">Example</h1>
+                <div>
+                  <div id="myCarousel" class="carousel slide">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li class="item1 active"></li>
+                      <li class="item2"></li>
+                      <li class="item3"></li>
+                      <li class="item4"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                
+                      <div class="item active">
+                        <img src="Images/c1.png" alt="Chania">
+                        <div class="carousel-caption">
+                          <h3>Title</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                
+                      <div class="item">
+                        <img src="Images/c2.png" alt="Chania">
+                        <div class="carousel-caption">
+                          <h3>Title</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                    
+                      <div class="item">
+                        <img src="Images/c3.png" alt="Flower">
+                        <div class="carousel-caption">
+                          <h3>Title</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                
+                      <div class="item">
+                        <img src="Images/c4.png" alt="Flower">
+                        <div class="carousel-caption">
+                          <h3>Title</h3>
+                          <p>Description</p>
+                        </div>
+                      </div>
+                  
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div> 
+            </div>
+        </div>
+        <script>
+          $(document).ready(function(){
+            // Activate Carousel
+            $("#myCarousel").carousel();
+              
+            // Enable Carousel Indicators
+            $(".item1").click(function(){
+              $("#myCarousel").carousel(0);
+            });
+            $(".item2").click(function(){
+              $("#myCarousel").carousel(1);
+            });
+            $(".item3").click(function(){
+              $("#myCarousel").carousel(2);
+            });
+            $(".item4").click(function(){
+              $("#myCarousel").carousel(3);
+            });
+              
+            // Enable Carousel Controls
+            $(".left").click(function(){
+              $("#myCarousel").carousel("prev");
+            });
+            $(".right").click(function(){
+              $("#myCarousel").carousel("next");
+            });
+          });
+          </script>
+
+        <div class="parent">
+            <div class="flexchild">
+                <h1 style="font-family: Anton; color:rgb(8, 126, 142);font-size: 30px;">Example Code</h1>
+                <p style="text-align: left; margin-left: 10px;">
+                
+&lt!DOCTYPE html&gt<br>
+&lthtml lang="en"&gt<br>
+&lthead&gt<br>
+  &lttitle&gtBootstrap Example&lt/title&gt<br>
+  &ltmeta charset="utf-8"&gt<br>
+  &ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt<br>
+  &ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"&gt<br>
+  &ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"&gt&lt/script&gt<br>
+  &ltscript src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"&gt&lt/script&gt<br>
+  &ltstyle&gt<br>
+  .carousel-inner &gt .item &gt img,<br>
+  .carousel-inner &gt .item &gt a &gt img {<br>
+    width: 70%;<br>
+    margin: auto;<br>
+  }<br>
+  &lt/style&gt<br>
+&lt/head&gt<br>
+&ltbody&gt<br>
+<br>
+&ltdiv class="container"&gt<br>
+  &lth2&gtActivate Carousel with JavaScript&lt/h2&gt<br>
+  &ltdiv id="myCarousel" class="carousel slide"&gt<br><br>
+    &lt!-- Indicators --&gt<br>
+    &ltol class="carousel-indicators"&gt<br>
+      &ltli class="item1 active"&gt&lt/li&gt<br>
+      &ltli class="item2"&gt&lt/li&gt<br>
+      &ltli class="item3"&gt&lt/li&gt<br>
+      &ltli class="item4"&gt&lt/li&gt<br>
+    &lt/ol&gt<br>
+    <br>
+    &lt!-- Wrapper for slides --&gt<br>
+    &ltdiv class="carousel-inner" role="listbox"&gt<br>
+    <br>
+      &ltdiv class="item active"&gt<br>
+        &ltimg src="img_chania.jpg" alt="Chania" width="460" height="345"&gt<br>
+        &ltdiv class="carousel-caption"&gt<br>
+          &lth3&gtChania&lt/h3&gt<br>
+          &ltp&gtThe atmosphere in Chania has a touch of Florence and Venice.&lt/p&gt<br>
+        &lt/div&gt<br>
+      &lt/div&gt<br>
+      <br>
+      &ltdiv class="item"&gt<br>
+        &ltimg src="img_chania2.jpg" alt="Chania" width="460" height="345"&gt<br>
+        &ltdiv class="carousel-caption"&gt<br>
+          &lth3&gtChania&lt/h3&gt<br>
+          &ltp&gtThe atmosphere in Chania has a touch of Florence and Venice.&lt/p&gt<br>
+        &lt/div&gt<br>
+      &lt/div&gt<br>
+      <br>
+      &ltdiv class="item"&gt<br>
+        &ltimg src="img_flower.jpg" alt="Flower" width="460" height="345"&gt<br>
+        &ltdiv class="carousel-caption"&gt<br>
+          &lth3&gtFlowers&lt/h3&gt<br>
+          &ltp&gtBeautiful flowers in Kolymbari, Crete.&lt/p&gt<br>
+        &lt/div&gt<br>
+      &lt/div&gt<br>
+      <br>
+      &ltdiv class="item"&gt<br>
+        &ltimg src="img_flower2.jpg" alt="Flower" width="460" height="345"&gt<br>
+        &ltdiv class="carousel-caption"&gt<br>
+          &lth3&gtFlowers&lt/h3&gt<br>
+          &ltp&gtBeautiful flowers in Kolymbari, Crete.&lt/p&gt<br>
+        &lt/div&gt<br>
+      &lt/div&gt<br>
+      <br>
+    &lt/div&gt<br>
+    <br>
+    &lt!-- Left and right controls --&gt<br>
+    &lta class="left carousel-control" href="#myCarousel" role="button"&gt<br>
+      &ltspan class="glyphicon glyphicon-chevron-left" aria-hidden="true"&gt&lt/span&gt<br>
+      &ltspan class="sr-only"&gtPrevious&lt/span&gt<br>
+    &lt/a&gt<br>
+    &lta class="right carousel-control" href="#myCarousel" role="button"&gt<br>
+      &ltspan class="glyphicon glyphicon-chevron-right" aria-hidden="true"&gt&lt/span&gt<br>
+      &ltspan class="sr-only"&gtNext&lt/span&gt<br>
+    &lt/a&gt<br>
+  &lt/div&gt<br>
+&lt/div&gt<br>
+<br>
+&ltscript&gt<br>
+$(document).ready(function(){<br>
+  // Activate Carousel<br>
+  $("#myCarousel").carousel();<br>
+  <br>
+  // Enable Carousel Indicators<br>
+  $(".item1").click(function(){<br>
+    $("#myCarousel").carousel(0);<br>
+  });<br>
+  $(".item2").click(function(){<br>
+    $("#myCarousel").carousel(1);<br>
+  });<br>
+  $(".item3").click(function(){<br>
+    $("#myCarousel").carousel(2);<br>
+  });<br>
+  $(".item4").click(function(){<br>
+    $("#myCarousel").carousel(3);<br>
+  });<br>
+  <br>
+  // Enable Carousel Controls<br>
+  $(".left").click(function(){<br>
+    $("#myCarousel").carousel("prev");<br>
+  });<br>
+  $(".right").click(function(){<br>
+    $("#myCarousel").carousel("next");<br>
+  });<br>
+});<br>
+&lt/script&gt<br>
+<br>
+&lt/body&gt<br>
+&lt/html&gt<br>
+</p><br>
+            </div>
+            <div class="flexchild"></div>
+        </div>
+
+    </body>
+</html>
